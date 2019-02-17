@@ -1,1 +1,4 @@
 这是zhiziblog
+前台使用的是自己手写页面 运用了 bootstrap+jquery
+后台使用的是FastAdmin开发
+该博客有些功能还不够全面
