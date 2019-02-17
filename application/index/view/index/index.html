@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>栀子-blog</title>
+	<meta name="Author" content="网页作者" /> 
+	<meta name="Copyright" content="网站版权" /> 
+	<meta name="keywords" content="网站关键字" />
+	<meta name="description" content="网站描述" />
+	<link rel="Shortcut Icon" href="__PUBLIC__/assets/img/icon/emoji-8.png" />
+	<link rel="stylesheet" href="__PUBLIC__/assets/css/index-blog.css">
+	<link rel="stylesheet" href="__PUBLIC__/assets/css/home.css">
+	<!-- 新 Bootstrap 核心 CSS 文件 -->
+	<link href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+	<!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+	<script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+	<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+	<script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+	{include file="common/header"}
+	<!-- 主要内容部分	 -->
+	<div class="mainbox">
+	{include file="common/leftinfo"}
+		<div class="rightinfo" >
+			<div class="righttitle" >
+				<span class="glyphicon glyphicon-circle-arrow-up"></span>
+				<span class="rtitle"><a href="">the-right-info</a></span>
+			</div>
+			<div class="bigimg" >
+				<div id="myCarousel" class="carousel slide">
+					<!-- 轮播指标 -->
+					<ol class="carousel-indicators">
+						<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+						<li data-target="#myCarousel" data-slide-to="1"></li>
+						<li data-target="#myCarousel" data-slide-to="2"></li>
+					</ol>   
+					<!-- 轮播项目 -->
+					<div class="carousel-inner">
+						<div class="item active">
+							<img src="__PUBLIC__/assets/img/tupian.png" class="carimg" alt="First slide">
+						</div>
+						<div class="item">
+							<img src="__PUBLIC__/assets/img/cat.jpg" class="carimg" alt="Second slide">
+						</div>
+						<div class="item">
+							<img src="__PUBLIC__/assets/img/pig2.jpg" class="carimg" alt="Third slide">
+						</div>
+						<!-- 轮播导航 -->
+						<a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+							<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+							<span class="sr-only">Previous</span>
+						</a>
+						<a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+							<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+							<span class="sr-only">Next</span>
+						</a>
+					</div>
+					</div>
+					{volist name="info" id= "vo"}
+					<article class="input_post">
+						<h2>{$vo.title}</h2>
+						<p>{$vo.intro}</p>
+						<p>{$vo.content}<img src="__PUBLIC__/assets/img/icon/emoji-6.svg" alt=""></p>
+						<span class="time" ><img src="assets/img/icon/日历.svg" alt="">
+							<span class="datatime" style="">{$vo.updatetime|date="Y-m-d",###}</span></span>
+					</article>
+					{/volist}
+					<!-- 分页 -->
+					<div class="pg" >
+						<ul class="pager">
+							<li><a href="">Previous</a></li>
+							<li><a href="">Next</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		{include file="common/footer"}
+	</body>
+	</html>

@@ -1,0 +1,380 @@
+---------------------------------------------------------------
+[ 2019-01-30T14:36:12+08:00 ] 127.0.0.1 GET 127.0.0.1/blog/FastAdmin/public/
+[运行时间：0.364336s] [吞吐率：2.74req/s] [内存消耗：2,992.69kb] [文件加载：69]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.005605s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.005493s ]
+[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\blog\FastAdmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3610.2 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/blog/FastAdmin/',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\blog\FastAdmin\public/../application/index\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.005954s ]
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\phpstudy\PHPTutorial\WWW\blog\FastAdmin\application\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ error ] [1049]SQLSTATE[HY000] [1049] Unknown database 'fastadmin'[D:\phpstudy\PHPTutorial\WWW\blog\FastAdmin\thinkphp\library\think\db\Connection.php:295]
+---------------------------------------------------------------
+[ 2019-01-30T14:36:57+08:00 ] 127.0.0.1 GET 127.0.0.1/blog/FastAdmin/public/
+[运行时间：0.339353s] [吞吐率：2.95req/s] [内存消耗：3,160.67kb] [文件加载：70]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000042s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.005037s ]
+[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\blog\FastAdmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3610.2 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/blog/FastAdmin/',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\blog\FastAdmin\public/../application/index\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.005670s ]
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\phpstudy\PHPTutorial\WWW\blog\FastAdmin\application\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpstudy\PHPTutorial\WWW\blog\FastAdmin\public/../application/index\view\index\index.html [ array (
+  0 => 'info',
+  1 => 'uinfo',
+  2 => 'infol',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.042710s ] mysql:host=127.0.0.1;dbname=fastadmin1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_home` [ RunTime:0.060872s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_home` [ RunTime:0.017424s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_classify` [ RunTime:0.012303s ]
+[ sql ] [ SQL ] SELECT `ctitle` FROM `fa_classify` [ RunTime:0.000575s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_leftlist` [ RunTime:0.013099s ]
+[ sql ] [ SQL ] SELECT `nameid`,`image`,`intro` FROM `fa_leftlist` LIMIT 1 [ RunTime:0.000608s ]
+---------------------------------------------------------------
+[ 2019-01-30T14:37:14+08:00 ] 127.0.0.1 GET 127.0.0.1/blog/FastAdmin/public/index/index/index
+[运行时间：0.256151s] [吞吐率：3.90req/s] [内存消耗：3,015.69kb] [文件加载：68]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000044s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.003953s ]
+[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\blog\FastAdmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3610.2 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/blog/FastAdmin/public/',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\blog\FastAdmin\public/../application/index\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.009367s ]
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\phpstudy\PHPTutorial\WWW\blog\FastAdmin\application\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpstudy\PHPTutorial\WWW\blog\FastAdmin\public/../application/index\view\index\index.html [ array (
+  0 => 'info',
+  1 => 'uinfo',
+  2 => 'infol',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004120s ] mysql:host=127.0.0.1;dbname=fastadmin1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_home` [ RunTime:0.013457s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_home` [ RunTime:0.000580s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_classify` [ RunTime:0.013252s ]
+[ sql ] [ SQL ] SELECT `ctitle` FROM `fa_classify` [ RunTime:0.000660s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_leftlist` [ RunTime:0.010461s ]
+[ sql ] [ SQL ] SELECT `nameid`,`image`,`intro` FROM `fa_leftlist` LIMIT 1 [ RunTime:0.000591s ]
+---------------------------------------------------------------
+[ 2019-01-30T14:37:14+08:00 ] 127.0.0.1 GET 127.0.0.1/blog/FastAdmin/public/index/index/assets/img/icon/%E6%97%A5%E5%8E%86.svg
+[运行时间：0.171796s] [吞吐率：5.82req/s] [内存消耗：2,271.07kb] [文件加载：65]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000055s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.007154s ]
+[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\blog\FastAdmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'assets',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3610.2 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/blog/FastAdmin/public/index/index/index',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+  'img' => 'icon',
+)
+[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\blog\FastAdmin\public/../application/index\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.025345s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-01-30T14:37:18+08:00 ] 127.0.0.1 GET 127.0.0.1/blog/FastAdmin/public/index/index/article
+[运行时间：0.248168s] [吞吐率：4.03req/s] [内存消耗：3,282.31kb] [文件加载：74]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000048s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.005367s ]
+[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\blog\FastAdmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'article',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3610.2 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/blog/FastAdmin/public/index/index/index',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\blog\FastAdmin\public/../application/index\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.007659s ]
+[ info ] [ RUN ] app\index\controller\Index->article[ D:\phpstudy\PHPTutorial\WWW\blog\FastAdmin\application\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpstudy\PHPTutorial\WWW\blog\FastAdmin\public/../application/index\view\index\article.html [ array (
+  0 => 'article',
+  1 => 'page',
+  2 => 'uinfo',
+  3 => 'infol',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011677s ] mysql:host=127.0.0.1;dbname=fastadmin1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_articlelists` [ RunTime:0.009172s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `fa_articlelists` LIMIT 1 [ RunTime:0.000484s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_articlelists` LIMIT 0,3 [ RunTime:0.000713s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_classify` [ RunTime:0.008336s ]
+[ sql ] [ SQL ] SELECT `ctitle` FROM `fa_classify` [ RunTime:0.000475s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_leftlist` [ RunTime:0.009328s ]
+[ sql ] [ SQL ] SELECT `nameid`,`image`,`intro` FROM `fa_leftlist` LIMIT 1 [ RunTime:0.000467s ]
+---------------------------------------------------------------
+[ 2019-01-30T14:37:20+08:00 ] 127.0.0.1 GET 127.0.0.1/blog/FastAdmin/public/index/index/message
+[运行时间：0.210374s] [吞吐率：4.75req/s] [内存消耗：3,359.44kb] [文件加载：75]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000060s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.007189s ]
+[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\blog\FastAdmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'message',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3610.2 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/blog/FastAdmin/public/index/index/article',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\blog\FastAdmin\public/../application/index\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.007459s ]
+[ info ] [ RUN ] app\index\controller\Index->message[ D:\phpstudy\PHPTutorial\WWW\blog\FastAdmin\application\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpstudy\PHPTutorial\WWW\blog\FastAdmin\public/../application/index\view\index\message.html [ array (
+  0 => 'showinfo',
+  1 => 'page',
+  2 => 'count',
+  3 => 'uinfo',
+  4 => 'infol',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004827s ] mysql:host=127.0.0.1;dbname=fastadmin1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_message` [ RunTime:0.009611s ]
+[ sql ] [ SQL ] SELECT COUNT(id) AS tp_count FROM `fa_message` LIMIT 1 [ RunTime:0.000469s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `fa_message` LIMIT 1 [ RunTime:0.000522s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_message` ORDER BY `id` DESC LIMIT 0,10 [ RunTime:0.000544s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_classify` [ RunTime:0.008809s ]
+[ sql ] [ SQL ] SELECT `ctitle` FROM `fa_classify` [ RunTime:0.000404s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_leftlist` [ RunTime:0.008760s ]
+[ sql ] [ SQL ] SELECT `nameid`,`image`,`intro` FROM `fa_leftlist` LIMIT 1 [ RunTime:0.000490s ]
+---------------------------------------------------------------
+[ 2019-01-30T14:37:22+08:00 ] 127.0.0.1 GET 127.0.0.1/blog/FastAdmin/public/index/index/informal
+[运行时间：0.151678s] [吞吐率：6.59req/s] [内存消耗：3,144.07kb] [文件加载：70]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000038s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.003491s ]
+[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\blog\FastAdmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'informal',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3610.2 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/blog/FastAdmin/public/index/index/message',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\blog\FastAdmin\public/../application/index\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.007077s ]
+[ info ] [ RUN ] app\index\controller\Index->Informal[ D:\phpstudy\PHPTutorial\WWW\blog\FastAdmin\application\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpstudy\PHPTutorial\WWW\blog\FastAdmin\public/../application/index\view\index\informal.html [ array (
+  0 => 'uinfo',
+  1 => 'infol',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003323s ] mysql:host=127.0.0.1;dbname=fastadmin1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_classify` [ RunTime:0.008722s ]
+[ sql ] [ SQL ] SELECT `ctitle` FROM `fa_classify` [ RunTime:0.000523s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_leftlist` [ RunTime:0.008688s ]
+[ sql ] [ SQL ] SELECT `nameid`,`image`,`intro` FROM `fa_leftlist` LIMIT 1 [ RunTime:0.000475s ]
+---------------------------------------------------------------
+[ 2019-01-30T14:37:25+08:00 ] 127.0.0.1 GET 127.0.0.1/blog/FastAdmin/public/index/index/login
+[运行时间：0.163716s] [吞吐率：6.11req/s] [内存消耗：2,462.16kb] [文件加载：66]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000039s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.004084s ]
+[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\blog\FastAdmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3610.2 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/blog/FastAdmin/public/index/index/informal',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\blog\FastAdmin\public/../application/index\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.007590s ]
+[ info ] [ RUN ] app\index\controller\Index->login[ D:\phpstudy\PHPTutorial\WWW\blog\FastAdmin\application\index\controller\Index.php ]
+[ info ] [ VIEW ] D:\phpstudy\PHPTutorial\WWW\blog\FastAdmin\public/../application/index\view\index\login.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-01-30T14:38:15+08:00 ] 127.0.0.1 GET 127.0.0.1/blog/public/
+[运行时间：0.366517s] [吞吐率：2.73req/s] [内存消耗：3,156.74kb] [文件加载：70]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000052s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.016767s ]
+[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3610.2 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/blog/',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\blog\public/../application/index\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.008928s ]
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\phpstudy\PHPTutorial\WWW\blog\application\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpstudy\PHPTutorial\WWW\blog\public/../application/index\view\index\index.html [ array (
+  0 => 'info',
+  1 => 'uinfo',
+  2 => 'infol',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004627s ] mysql:host=127.0.0.1;dbname=fastadmin1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_home` [ RunTime:0.010227s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_home` [ RunTime:0.000579s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_classify` [ RunTime:0.012044s ]
+[ sql ] [ SQL ] SELECT `ctitle` FROM `fa_classify` [ RunTime:0.000409s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_leftlist` [ RunTime:0.011261s ]
+[ sql ] [ SQL ] SELECT `nameid`,`image`,`intro` FROM `fa_leftlist` LIMIT 1 [ RunTime:0.000369s ]

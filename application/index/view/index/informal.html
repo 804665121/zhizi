@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>随笔</title>
+	<meta name="Author" content="网页作者" /> 
+	<meta name="Copyright" content="网站版权" /> 
+	<meta name="keywords" content="网站关键字" />
+	<meta name="description" content="网站描述" />
+	<link rel="Shortcut Icon" href="__PUBLIC__/assets/img/icon/emoji-8.png" />
+	<link rel="stylesheet" href="__PUBLIC__/assets/css/index-blog.css">
+	<link rel="stylesheet" href="__PUBLIC__/assets/css/home.css">
+	<!-- 新 Bootstrap 核心 CSS 文件 -->
+	<link href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+	<!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+	<script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+	<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+	<script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<style type="text/css">
+	.rightform{
+		width: 31%;
+		float: left;
+		margin: 50px;
+	}
+	.bq{
+		float: right;
+	}
+	.rightinfo{
+		margin:0 50px 50px 50px;
+		width: 50%;
+		float: left;
+	}
+	.title{
+		font-size: 25px;
+	}
+	i{
+		font-size: 12px;
+		margin-left: 10px;
+	}
+</style>
+<body>
+	{include file="common/header"}
+	<div class="mainbox">
+		{include file="common/leftinfo"}
+		<div class="rightform">
+			<form role="form">
+			<div class="form-group">
+				<label for="name">标题名称:</label>
+				<input type="text" class="form-control" id="name" 
+				placeholder="请输入标题名称">
+			</div>
+			<div class="form-group">
+				<label for="name">内容:</label>
+				<textarea class="form-control" rows="3" id="content"></textarea>
+			</div>
+			<input type="button"  class="btn btn-default bq" id="baocun" value="保存"></input>
+		</form>
+		</div>
+		<!-- 随笔展示 -->
+		<div class="rightinfo">
+			{volist name="informal" id="vo"}
+			<p class="title">{$vo.title}<i>{$vo.createtime|date="Y-m-d h:m:s",###}</i></p>
+			<p>{$vo.content}</p>
+			
+			{/volist}
+			<br>
+			{$page}
+		</div>
+
+	</div>
+	{include file="common/footer"}
+	<script type="text/javascript">
+		$(function(){
+			$('#baocun').click(function(){
+				var title=$('#name').val();
+			    var content=$('#content').val();
+			    if(title==''){
+			    	alert('请输入标题~');
+			    }else if(content==''){
+			    	alert('请输入内容~');
+			    }else{
+			    	$.getJSON('{:url("index/index/Infocont")}',{'title':title,'content':content},function(data){
+			    		window.location.reload();
+			    });
+
+			    }
+			});
+		});
+	</script>
+</body>
+</html>

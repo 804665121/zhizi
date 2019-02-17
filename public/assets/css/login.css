@@ -1,0 +1,27 @@
+.box{
+	width: 550px;
+	padding: 10px;
+	height:auto;
+	border-radius: 15px;
+	border:2px solid #ffc09f;
+	margin: 200px auto 100px auto;
+}
+.form-control{
+	height: 40px !important;
+
+}
+.font{
+	text-align: center;
+	 margin-top:100px;
+}
+.activelist a{
+	margin:80px 0 10px 153px; 
+	padding: 20px 30px !important;
+}
+.list a{
+	padding: 20px 30px !important;
+	margin:80px 0 10px 10px; 
+}
+.nav-tabs{
+	border:0!important;
+}

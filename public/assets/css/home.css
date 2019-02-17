@@ -1,0 +1,166 @@
+/*头部图片信息*/
+.topimg{
+	background-image: url(../img/bj2.jpeg);
+	width: 100%;
+	height: 500px;
+}
+img{
+	vertical-align: middle;
+}
+a:hover{
+	color: pink;
+}
+.navtop{
+	margin:0 auto;
+	line-height: 70px;
+	text-align: center !important;
+	height: 50px;
+	opacity: 0.5;
+	font-size: 2rem;
+	font-weight: 700;
+}
+.navbar-right{
+	line-height: 19px;
+	margin-top: 6px;
+
+}
+.head_imgs{
+	margin:10px;
+	vertical-align: middle;
+	width: 100%;
+	height:225px;
+	border-radius: 20%;
+
+}
+/*主要内容部分*/
+.mainbox{
+	width: 1170px;
+	margin: 50px auto 0 auto;
+	overflow: hidden;
+	height: auto;
+}
+.leftinfo{
+	width: 18%;
+	float: left;
+}
+.lefttitle{
+	text-align: center;
+}
+.titleinfo{
+	font-size: 20px;
+	color: #d9d9d9;
+}
+.leftlist{
+
+	width: 100%;
+	height: 40px;
+	border-bottom: 1px solid #d9d9d9;
+	padding-left: 6px; 
+}
+/*分类*/
+.classify{
+	height: auto;
+	width: 100%;
+	padding-left:6px;
+}
+.classify-item a{
+	line-height: 25px;
+	color: #ccc;
+
+}
+.friends{
+	font-size: 1.6rem;
+	font-weight: 700;
+	color: #777;
+	line-height: 36px;
+	width: 100%;
+	height: 70px;
+	border-bottom: 1px solid #d9d9d9;
+	padding-left: 6px; 
+}
+.icon{
+	line-height: 40px;
+	display: inline-block;
+}
+.icon a:hover img{
+	color: green;
+}
+.icon img{
+	width: 25px;
+	height: 25px;
+}
+.rightinfo{
+	width: 80%;
+	float: right;
+	height: auto;
+}
+.rtitle{
+	font-size: 2.7rem;
+	font-weight: 700;
+	color: #787878;
+}
+.bigimg{
+	width: 100%;
+	padding: 10px;
+
+}
+.item img,.item{
+	width: 100%;
+	height: 625px;
+}
+.righttitle{
+	height: 30px;
+	margin: 20px;
+}
+.left_buttom{
+	font-size: 2rem;
+	font-weight: 700;
+	color: #777;
+	line-height: 43px;
+
+}
+
+
+.input_post{
+	border-bottom: 1px dashed rgba(0,0,0,0.2);
+	padding: 10px;
+}
+.datatime{
+	font-size: 1.5rem;
+	font-weight: 900;
+	color: #8a8a8a;
+}
+.pg{
+	font-size: 2rem;
+	font-weight: 700;
+	width: 100%;
+	height: 30px;
+	margin-bottom: 30px;
+
+}
+.pg a{
+	border: 0 !important;
+	padding: 0 !important;
+	color: pink !important;
+	border-radius: 5px !important;
+	margin-left: 10px; 
+}
+.pg a:hover{
+	background-color: none !important;
+}
+footer{
+	width: 100%;
+}
+.foot{
+	background-color: #f2efe6;
+	height: 200px;
+	width: 100%;
+	font-size: 1.5rem;
+	font-weight: 700;
+	text-align: center;
+	padding-top: 20px;
+}
+.foot p{
+	font-size: 1rem;
+
+}

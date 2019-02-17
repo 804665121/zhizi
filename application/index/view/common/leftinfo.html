@@ -1,0 +1,30 @@
+<div class="leftinfo">
+	<img src="__PUBLIC__/{$uinfo.image}"   class="head_imgs" alt="" style="">
+	<h1 class="lefttitle" >{$uinfo.nameid}
+		<p class="titleinfo">{$uinfo.intro}</p>
+	</h1>
+	<div  class="leftlist">
+		<a href="#" class="icon"><img src="__PUBLIC__/assets/img/icon/email.svg" alt=""></a>
+		<a href="#" class="icon"><img src="__PUBLIC__/assets/img/icon/Github.svg" alt=""></a>
+		<a href="#" class="icon"><img src="__PUBLIC__/assets/img/icon/微信.svg" alt=""></a>
+	</div>
+	<div class="friends">
+		<div style="">FRIENDS</div>
+		<span>friends</span>
+		<span>friends</span>
+	</div>
+	<div class="classify">
+		<a href="" class="left_buttom" >分类</a>
+		{volist name="infol" id="v"}
+		<ul class="classify-item">
+			<li><a href="">{$v.ctitle}</a></li>
+		</ul>
+		{/volist}
+	</div>
+	<div class="leftlist">
+		<a href="__CDN__/index/index/informal" class="left_buttom" >随笔</a>
+	</div>
+	<div class="leftlist">
+	<a href="__CDN__/index/index/login" class="left_buttom" >登录</a>
+	</div>
+</div>

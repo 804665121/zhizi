@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>留言页面</title>
+	<meta name="Author" content="网页作者" /> 
+	<meta name="Copyright" content="网站版权" /> 
+	<meta name="keywords" content="网站关键字" />
+	<meta name="description" content="网站描述" />
+	<link rel="Shortcut Icon" href="__PUBLIC__/assets/img/icon/emoji-8.png" />
+	<link rel="stylesheet" href="__PUBLIC__/assets/css/index-blog.css">
+	<link rel="stylesheet" href="__PUBLIC__/assets/css/home.css">
+	<!-- 新 Bootstrap 核心 CSS 文件 -->
+	<link href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+	<!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+	<script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+	<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+	<script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<style type="text/css">
+	.message-board{
+		float: right;
+		width: 65%;
+		height: 100%;
+		
+	}
+	.board{
+		width: 700px;
+		height: 100px !important;
+		border:2px solid #ccc;
+		border-radius: 15px;
+		outline: 0;
+	}
+	.tj{
+		outline: 0;
+		border-radius: 10px;
+		border:0;
+		float: right;
+		width: 120px;
+		margin-right: 100px;
+		background-color: #ffe20d;
+	}
+	.mtitle{
+		width: 60%;
+		height: 40px;
+	}
+	.leaveinfo{
+		margin-bottom: 100px;
+
+	}
+	.show{
+		margin-bottom: 10px;
+		padding: 10px; 
+		width: 100%;
+		height: auto;
+
+	}
+	i{
+		float: right;
+	}
+	.pgs{
+		float: right;
+		color: pink;
+	}
+	</style>
+</head>
+<body>
+{include file="common/header"}
+	<!-- 主要内容部分	 -->
+	<div class="mainbox">
+		{include file="common/leftinfo"}
+
+		<div class="message-board">
+			<form action="" method="" class="leaveinfo">
+				<div class="form-group">
+					<label for="name">id名称~</label>
+					<input type="text" class="form-control mtitle"  id="title" placeholder="请输入名称">
+				</div>
+				<label for="name">留言板~</label>
+				<div class="form-group ">
+					<textarea class="board form-control" id="mes">
+					</textarea>
+				</div>
+				<input type="button" id="tjinfo" class="btn btn-default btn-sm tj" value="发送">
+			</form>
+			<label for="">评论({$count})</label>
+			{volist name="showinfo" id="vo"}
+			<div class="show" >
+				<h3>{$vo.mtitle}</h3>
+				<p>{$vo.minfo}</p>
+				<i>{$vo.createtime|date="Y-m-d H:i:s",###}</i>
+				<!-- <input type="button" value="删除" class="btn btn-default dele" data_id="{$vo.id}" > -->
+			</div>
+			{/volist}
+			<div calss="pgs">{$page}</div>
+			
+		</div>
+	</div>
+	{include file="common/footer"}
+</body>
+</html>
+<script>
+$(function(){
+    $('#tjinfo').click(function(){
+    	var title=$('#title').val();
+    	var mes=$('#mes').val();
+    	var tj =$('#tjinfo').css('outline:0');
+    	if(title==""||title.replace(/^\s+,""/).replace(/^\s+$/,"")=='')
+    	{
+    		alert('请填写留言信息哦~');
+    	}else if(mes==""||mes.replace(/^\s+,""/).replace(/^\s+$/,"")=='')
+    	{
+    		alert('请填写留言信息哦~');
+    	}
+    	else{
+    		$.getJSON('{:url("index/index/messageinfo")}',{'mes':mes,'title':title},function(data){
+    			if(data.result){
+    				alert(data.msg);
+    				window.location.reload();
+    			}
+
+    		});
+    	}
+    });
+
+    $('.dele').click(function(){
+    	var data_id=$(this).attr('data_id');
+    	$.getJSON('{:url("index/index/messagedelect")}',{'id':data_id},function(data){
+    		if(data.result){
+    			alert(data.msg);
+    			window.location.reload();
+    		}
+    	});
+    });
+
+});
+</script>

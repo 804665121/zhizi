@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>文章列表</title>
+	<meta name="Author" content="网页作者" /> 
+	<meta name="Copyright" content="网站版权" /> 
+	<meta name="keywords" content="网站关键字" />
+	<meta name="description" content="网站描述" />
+	<link rel="Shortcut Icon" href="__PUBLIC__/assets/img/icon/emoji-8.png" />
+	<link rel="stylesheet" href="__PUBLIC__/assets/css/index-blog.css">
+	<link rel="stylesheet" href="__PUBLIC__/assets/css/home.css">
+	<!-- 新 Bootstrap 核心 CSS 文件 -->
+	<link href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+	<!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+	<script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+	<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+	<script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<style type="text/css">
+.artright{
+	padding:10px;
+	width: 85%;
+	height: auto;
+	border:1px solid #f3dde1;
+	float: right;
+	margin: 50px 20px 20px 10px;
+}
+.imgright{
+	float: left;
+	margin-left: 50px; 
+}
+.infoimg{
+	width: 200px;
+	height: 200px;
+	float: left;
+
+}
+.bottom_info{
+	float: right;
+	width: 100%;
+	height: 20px;
+	color: #ccc;
+
+}
+.info_item{
+	float: right;
+	margin-right:20px;
+
+}
+.artinfo span{
+	margin-right: 15px;
+	color:#ccc; 
+}
+.right_page{
+	width: 26%; 
+	float: right;
+
+}
+</style>
+<body>
+	{include file="common/header"}
+	<div class="mainbox">
+		{include file="common/leftinfo"}
+		<div class="rightinfo">
+			{volist name="article" id="v"}
+			<div class="artright">
+				<h2><a href="__CDN__/index/index/articleinfo">{$v.atitle}</a></h2>
+				<p class="artinfo">
+					<span class="glyphicon glyphicon-user">&nbsp;{$v.user}</span>
+					<span>分类:{$v.classify}</span>
+					<span>时间:{$v.createtime|date='Y-m-d H:i:s',###}</span>
+				</p>
+				<div>
+					<img src="__PUBLIC__/assets/img/tupian.png" class="infoimg"  alt="">
+					<div class="imgright">
+						<h3>{$v.atitle}</h3>
+					</div>
+				</div>
+				<p class="bottom_info">
+					<span class="info_item glyphicon glyphicon-heart" >点赞</span>
+					<span class="info_item glyphicon glyphicon-pencil">评论</span>
+				</p>
+			</div>
+			{/volist}
+			<div class="right_page">{$page}</div>
+		</div>
+	</div>
+	{include file="common/footer"}
+</body>
+</html>

@@ -1,0 +1,58 @@
+[ 2019-01-26T09:15:44+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001917s ]
+[ info ] [ LOG ] INIT File
+[ 2019-01-26T09:15:44+08:00 ][ info ] [ CACHE ] INIT File
+[ 2019-01-26T09:15:44+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002699s ]
+[ 2019-01-26T09:15:44+08:00 ][ info ] [ DB ] INIT mysql
+[ 2019-01-26T09:15:44+08:00 ][ sql ] [ DB ] CONNECT:[ UseTime:0.025000s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ 2019-01-26T09:15:44+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'leftinfo' [ RunTime:0.001174s ]
+[ 2019-01-26T09:15:44+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'fa_leftinfo' [ RunTime:0.000854s ]
+[ 2019-01-26T09:15:44+08:00 ][ sql ] [ SQL ] SELECT * FROM `information_schema`.`columns` WHERE TABLE_SCHEMA = 'fastadmin' AND table_name = 'fa_leftinfo' ORDER BY ORDINAL_POSITION [ RunTime:0.007186s ]
+[ 2019-01-26T09:15:53+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000174s ]
+[ info ] [ LOG ] INIT File
+[ 2019-01-26T09:15:53+08:00 ][ info ] [ CACHE ] INIT File
+[ 2019-01-26T09:15:53+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002425s ]
+[ 2019-01-26T09:15:53+08:00 ][ info ] [ DB ] INIT mysql
+[ 2019-01-26T09:15:53+08:00 ][ info ] [ LANG ] D:\PHPTutorial\WWW\FastAdmin\application\admin\lang/zh-cn.php
+[ 2019-01-26T09:15:53+08:00 ][ sql ] [ DB ] CONNECT:[ UseTime:0.026370s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ 2019-01-26T09:15:53+08:00 ][ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.007108s ]
+[ 2019-01-26T09:15:53+08:00 ][ sql ] [ SQL ] SELECT * FROM `fa_auth_rule` WHERE  `name` = 'leftinfo' LIMIT 1 [ RunTime:0.000500s ]
+[ 2019-01-26T09:15:53+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`pid` , `name` , `title` , `icon` , `remark` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (0 , 'leftinfo' , '侧边栏信息' , 'fa fa-circle-o' , '' , 1 , 'normal' , 1548465353 , 1548465353) [ RunTime:0.000984s ]
+[ 2019-01-26T09:15:53+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `fa_auth_rule` WHERE  `name` = 'leftinfo/index' LIMIT 1 [ RunTime:0.000421s ]
+[ 2019-01-26T09:15:53+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `fa_auth_rule` WHERE  `name` = 'leftinfo/add' LIMIT 1 [ RunTime:0.000349s ]
+[ 2019-01-26T09:15:53+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `fa_auth_rule` WHERE  `name` = 'leftinfo/edit' LIMIT 1 [ RunTime:0.000342s ]
+[ 2019-01-26T09:15:53+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `fa_auth_rule` WHERE  `name` = 'leftinfo/del' LIMIT 1 [ RunTime:0.000322s ]
+[ 2019-01-26T09:15:53+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `fa_auth_rule` WHERE  `name` = 'leftinfo/multi' LIMIT 1 [ RunTime:0.000337s ]
+[ 2019-01-26T09:15:53+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 146 , 'leftinfo/index' , 'fa fa-circle-o' , '查看' , 0 , 'normal' , 1548465353 , 1548465353) [ RunTime:0.000347s ]
+[ 2019-01-26T09:15:53+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 146 , 'leftinfo/add' , 'fa fa-circle-o' , '添加' , 0 , 'normal' , 1548465353 , 1548465353) [ RunTime:0.000332s ]
+[ 2019-01-26T09:15:53+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 146 , 'leftinfo/edit' , 'fa fa-circle-o' , '编辑' , 0 , 'normal' , 1548465353 , 1548465353) [ RunTime:0.000315s ]
+[ 2019-01-26T09:15:53+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 146 , 'leftinfo/del' , 'fa fa-circle-o' , '删除' , 0 , 'normal' , 1548465353 , 1548465353) [ RunTime:0.000315s ]
+[ 2019-01-26T09:15:53+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 146 , 'leftinfo/multi' , 'fa fa-circle-o' , '批量更新' , 0 , 'normal' , 1548465353 , 1548465353) [ RunTime:0.000319s ]
+[ 2019-01-26T09:26:51+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000185s ]
+[ info ] [ LOG ] INIT File
+[ 2019-01-26T09:26:51+08:00 ][ info ] [ CACHE ] INIT File
+[ 2019-01-26T09:26:51+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002623s ]
+[ 2019-01-26T09:26:51+08:00 ][ info ] [ DB ] INIT mysql
+[ 2019-01-26T09:26:52+08:00 ][ sql ] [ DB ] CONNECT:[ UseTime:0.026448s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ 2019-01-26T09:26:52+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'leftlist' [ RunTime:0.000881s ]
+[ 2019-01-26T09:26:52+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'fa_leftlist' [ RunTime:0.001437s ]
+[ 2019-01-26T09:26:52+08:00 ][ sql ] [ SQL ] SELECT * FROM `information_schema`.`columns` WHERE TABLE_SCHEMA = 'fastadmin' AND table_name = 'fa_leftlist' ORDER BY ORDINAL_POSITION [ RunTime:0.007338s ]
+[ 2019-01-26T09:27:04+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000178s ]
+[ info ] [ LOG ] INIT File
+[ 2019-01-26T09:27:04+08:00 ][ info ] [ CACHE ] INIT File
+[ 2019-01-26T09:27:04+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002509s ]
+[ 2019-01-26T09:27:04+08:00 ][ info ] [ DB ] INIT mysql
+[ 2019-01-26T09:27:04+08:00 ][ info ] [ LANG ] D:\PHPTutorial\WWW\FastAdmin\application\admin\lang/zh-cn.php
+[ 2019-01-26T09:27:04+08:00 ][ sql ] [ DB ] CONNECT:[ UseTime:0.025446s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ 2019-01-26T09:27:04+08:00 ][ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.007222s ]
+[ 2019-01-26T09:27:04+08:00 ][ sql ] [ SQL ] SELECT * FROM `fa_auth_rule` WHERE  `name` = 'leftlist' LIMIT 1 [ RunTime:0.000555s ]
+[ 2019-01-26T09:27:04+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`pid` , `name` , `title` , `icon` , `remark` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (0 , 'leftlist' , '侧边栏信息' , 'fa fa-circle-o' , '' , 1 , 'normal' , 1548466024 , 1548466024) [ RunTime:0.001058s ]
+[ 2019-01-26T09:27:04+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `fa_auth_rule` WHERE  `name` = 'leftlist/index' LIMIT 1 [ RunTime:0.000454s ]
+[ 2019-01-26T09:27:04+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `fa_auth_rule` WHERE  `name` = 'leftlist/add' LIMIT 1 [ RunTime:0.000397s ]
+[ 2019-01-26T09:27:04+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `fa_auth_rule` WHERE  `name` = 'leftlist/edit' LIMIT 1 [ RunTime:0.000392s ]
+[ 2019-01-26T09:27:04+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `fa_auth_rule` WHERE  `name` = 'leftlist/del' LIMIT 1 [ RunTime:0.000392s ]
+[ 2019-01-26T09:27:04+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `fa_auth_rule` WHERE  `name` = 'leftlist/multi' LIMIT 1 [ RunTime:0.000390s ]
+[ 2019-01-26T09:27:04+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 152 , 'leftlist/index' , 'fa fa-circle-o' , '查看' , 0 , 'normal' , 1548466024 , 1548466024) [ RunTime:0.000441s ]
+[ 2019-01-26T09:27:04+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 152 , 'leftlist/add' , 'fa fa-circle-o' , '添加' , 0 , 'normal' , 1548466024 , 1548466024) [ RunTime:0.000411s ]
+[ 2019-01-26T09:27:04+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 152 , 'leftlist/edit' , 'fa fa-circle-o' , '编辑' , 0 , 'normal' , 1548466024 , 1548466024) [ RunTime:0.000377s ]
+[ 2019-01-26T09:27:04+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 152 , 'leftlist/del' , 'fa fa-circle-o' , '删除' , 0 , 'normal' , 1548466024 , 1548466024) [ RunTime:0.000405s ]
+[ 2019-01-26T09:27:04+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 152 , 'leftlist/multi' , 'fa fa-circle-o' , '批量更新' , 0 , 'normal' , 1548466024 , 1548466024) [ RunTime:0.000397s ]
