@@ -134,6 +134,7 @@ class Index extends Controller
     public function articleinfo(){
          $article = Db::name('articlelists')->paginate(3);
         $this->assign('article',$article);
+        $this->getleftinfo();
         $page = $article->render();
         $this->assign('page',$page);
         return $this->view->fetch();
