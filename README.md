@@ -1,4 +1,6 @@
 1这是zhiziBlog    
+博客首页
+
 
 前台使用的是自己手写页面运用了bootstrap + jquery
    
