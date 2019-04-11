@@ -1,6 +1,6 @@
 1这是zhiziBlog    
 博客首页
-
+![首页][E:\工作文件\javaScript\new\image]
 
 前台使用的是自己手写页面运用了bootstrap + jquery
    
