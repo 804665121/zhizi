@@ -2,10 +2,15 @@
 ==========
 #博客首页展示信息
 
-![首页](https://github.com/804665121/zhiziBlog/blob/master/img/home.jpg)
+![首页](https://github.com/804665121/zhiziBlog/blob/master/img/home.png)
 
 
-![首页](https://github.com/804665121/zhiziBlog/blob/master/img/home1.jpg)
+![首页](https://github.com/804665121/zhiziBlog/blob/master/img/home1.png)
+
+
+#留言板页面
+
+![留言板页面](https://github.com/804665121/zhiziBlog/blob/master/img/message.png)
 
 #前台页面使用的是 html + css + bootstrap + jquery + tp框架 编写完成
    
