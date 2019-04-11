@@ -1,6 +1,9 @@
 1这是zhiziBlog    
-博客首页
+博客首页展示信息
+
 ![首页](https://github.com/804665121/zhiziBlog/blob/master/img/home.jpg)
+
+
 ![首页](https://github.com/804665121/zhiziBlog/blob/master/img/home1.jpg)
 
 前台使用的是自己手写页面运用了bootstrap + jquery
